@@ -1,0 +1,319 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* My Reset Styles */
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+html {
+  -webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* End of Reset*/
+body {
+  font-family: "Mukta Mahee", sans-serif;
+  background: #ffffff;
+  background: -moz-radial-gradient(center, ellipse cover, #ffffff 40%, #ededed 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #ffffff 40%, #ededed 100%);
+  background: radial-gradient(ellipse at center, #ffffff 40%, #ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=1 ); }
+
+/* 760px (size we want) / 16 (16px = 1em) = 47.5em  For Tablet*/
+/* 1140px (size we want) / 16 (16px = 1em) = 71.25em For Desktop*/
+/*----- Clearfix -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.headerWrapper {
+  background-image: url(../assets/frogs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  background-position: center;
+  font-family: "Francois One", sans-serif; }
+  .headerWrapper h1 {
+    padding-top: 20px;
+    font-size: 3em;
+    text-align: center;
+    color: #659dbd;
+    -webkit-text-shadow: 0px 0px 3px #fff;
+    -moz-text-shadow: 0px 0px 3px #fff;
+    -ms-text-shadow: 0px 0px 3px #fff;
+    text-shadow: 0px 0px 3px #fff; }
+
+.nav {
+  width: 100%;
+  background-color: none;
+  margin-top: 20px; }
+  .nav li {
+    padding: .6em;
+    text-align: center; }
+  .nav a {
+    text-decoration: none;
+    font-size: 1.45em;
+    color: #659dbd; }
+  .nav .active {
+    background-color: #8d8741; }
+    .nav .active a {
+      color: #fbeec1; }
+
+@media screen and (min-width: 566px) {
+  .headerWrapper {
+    height: 250px; }
+    .headerWrapper h1 {
+      padding-top: 30px; }
+
+  .nav {
+    width: 250px;
+    background-color: none;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto; }
+    .nav li {
+      float: left;
+      padding: .5em;
+      transition: background-color .4s linear;
+      border-right: #daad86 solid 1px; }
+      .nav li:last-child {
+        border: none; }
+      .nav li:hover {
+        background-color: #8d8741; }
+        .nav li:hover a {
+          color: #fbeec1; }
+    .nav a {
+      display: block;
+      font-size: 1.3em;
+      transition: color .4s linear; } }
+footer {
+  padding: 10px;
+  background-color: #bc986a; }
+  footer p {
+    font-size: .75em;
+    text-align: center;
+    color: #fbeec1; }
+
+.default {
+  padding: 0 2% 25px 2%;
+  min-height: 600px; }
+  .default h1 {
+    font-size: 1.8em;
+    color: #659dbd;
+    padding: 20px 0; }
+  .default p {
+    font-size: 1em;
+    padding: 1.4em 0; }
+  .default a {
+    text-decoration: none;
+    color: #8d8741;
+    transition: all .5s ease; }
+    .default a:hover {
+      text-decoration: overline;
+      color: #659dbd; }
+
+@media screen and (min-width: 566px) {
+  .default {
+    max-width: 1140px;
+    margin: 0 auto; } }
+.ContentContact {
+  padding: 0 2% 25px 2%;
+  min-height: 600px; }
+  .ContentContact h1 {
+    font-size: 1.8em;
+    color: #659dbd;
+    padding: 40px 0 20px 0; }
+  .ContentContact a.linkButton {
+    text-decoration: none;
+    color: #8d8741;
+    margin: 1em 0;
+    padding: .75em;
+    text-align: center;
+    width: 45%;
+    display: block;
+    border: 1px solid #8d8741;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    transition: color .75s ease, border-color .75s ease, background-color .75s ease; }
+    .ContentContact a.linkButton:hover {
+      color: #fbeec1;
+      border-color: #659dbd;
+      background-color: #659dbd; }
+  .ContentContact hr {
+    height: 1px;
+    color: #659dbd; }
+  .ContentContact .contactForm {
+    padding: 0 4%;
+    margin-bottom: 2em; }
+    .ContentContact .contactForm fieldset {
+      padding: .5em 0; }
+    .ContentContact .contactForm legend {
+      color: #8d8741;
+      padding: .25em 0 0 0;
+      font-size: 1.25em; }
+    .ContentContact .contactForm label {
+      margin-left: 1.5em;
+      display: block; }
+      .ContentContact .contactForm label.messageLabel {
+        margin-top: .50em; }
+    .ContentContact .contactForm span {
+      font-size: .8em; }
+      .ContentContact .contactForm span.formTitle {
+        font-size: 1em;
+        display: block;
+        margin: 1em 0 .5em 1.5em; }
+    .ContentContact .contactForm input.userInput {
+      display: block;
+      margin: .25em .25em 1em 0;
+      width: 90%;
+      padding: .75em; }
+    .ContentContact .contactForm input.submitbutton {
+      display: block;
+      border: #8d8741 1px solid;
+      padding: .75em;
+      background: none;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      border-radius: 20px;
+      color: #659dbd;
+      font-size: .75em;
+      margin: .75em 0;
+      transition: color .75s ease, background-color .75s ease; }
+      .ContentContact .contactForm input.submitbutton:hover {
+        background-color: #8d8741;
+        color: #fbeec1; }
+    .ContentContact .contactForm .contactOptions {
+      margin-left: 10px; }
+    .ContentContact .contactForm .message {
+      display: block;
+      width: 90%;
+      height: 100px;
+      margin-top: .2em;
+      border: 1px solid #E3E3E3;
+      padding: .75em; }
+    .ContentContact .contactForm .cancelButton {
+      color: #daad86;
+      border: #8d8741 1px solid;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      border-radius: 15px;
+      text-decoration: none;
+      padding: .35em;
+      font-size: 1em;
+      float: left;
+      transition: background-color .75s ease, color .75s ease; }
+      .ContentContact .contactForm .cancelButton:hover {
+        background-color: #8d8741;
+        color: #fbeec1; }
+  .ContentContact .deleteList {
+    margin-bottom: 3em; }
+  .ContentContact .deleteConfirmation {
+    padding: .25em; }
+    .ContentContact .deleteConfirmation h2 {
+      font-size: 1.5em; }
+    .ContentContact .deleteConfirmation p {
+      font-size: 1.25em; }
+  .ContentContact .detailContainer {
+    float: left;
+    width: 100%;
+    display: inline-block; }
+    .ContentContact .detailContainer h2 {
+      font-size: 1.5em;
+      color: #8d8741; }
+    .ContentContact .detailContainer p {
+      font-size: 1.5em;
+      color: #8d8741; }
+    .ContentContact .detailContainer .backButton {
+      text-decoration: none;
+      color: #8d8741;
+      margin: 1em 0;
+      padding: .75em;
+      text-align: center;
+      width: 45%;
+      display: block;
+      border: 1px solid #8d8741;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      border-radius: 15px;
+      transition: color .75s ease, border-color .75s ease, background-color .75s ease; }
+      .ContentContact .detailContainer .backButton:hover {
+        color: #fbeec1;
+        border-color: #659dbd;
+        background-color: #659dbd; }
+  .ContentContact .detailPicContainer {
+    float: left; }
+
+@media screen and (min-width: 566px) {
+  .ContentContact {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto; }
+    .ContentContact h1 {
+      padding-top: 20px; }
+    .ContentContact a.linkButton {
+      width: 15%; }
+    .ContentContact .contactForm input.userInput {
+      width: 60%; }
+    .ContentContact .contactForm .message {
+      width: 60%; }
+    .ContentContact .detailContainer {
+      width: 50%;
+      padding-left: 1em; }
+      .ContentContact .detailContainer h2 {
+        font-size: 2em; }
+      .ContentContact .detailContainer p {
+        font-size: 2em; }
+      .ContentContact .detailContainer .backButton {
+        width: 20%; } }
