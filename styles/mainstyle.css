@@ -81,7 +81,7 @@ body {
   background-position: center;
   font-family: "Francois One", sans-serif; }
   .headerWrapper h1 {
-    padding-top: 20px;
+    padding-top: 150px;
     font-size: 3em;
     text-align: center;
     color: #659dbd;
@@ -92,15 +92,14 @@ body {
 
 .nav {
   width: 100%;
-  background-color: none;
-  margin-top: 20px; }
+  background-color: #bc986a; }
   .nav li {
     padding: .6em;
     text-align: center; }
   .nav a {
     text-decoration: none;
     font-size: 1.45em;
-    color: #659dbd; }
+    color: #fff; }
   .nav .active {
     background-color: #8d8741; }
     .nav .active a {
@@ -110,21 +109,24 @@ body {
   .headerWrapper {
     height: 250px; }
     .headerWrapper h1 {
-      padding-top: 30px; }
+      padding-top: 50px; }
 
   .nav {
-    width: 250px;
-    background-color: none;
-    margin-top: 75px;
+    width: 100%;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    clear: both; }
+    .nav ul {
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+      background-color: red; }
     .nav li {
       float: left;
       padding: .5em;
       transition: background-color .4s linear;
-      border-right: #daad86 solid 1px; }
-      .nav li:last-child {
-        border: none; }
+      border-right: #daad86 solid 1px;
+      display: block; }
       .nav li:hover {
         background-color: #8d8741; }
         .nav li:hover a {

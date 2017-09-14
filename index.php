@@ -20,14 +20,14 @@
 
 <div class="headerWrapper clearfix">
 	<h1>Travel Hotel</h1>
-	
-	<div class="nav clearfix">
-		<ul>
-			<li class="active"><a href="index.php">View</a></li>
-			<li><a href="add.php">Add</a></li>
-			<li><a href="delete.php">Delete</a></li>
-		</ul>
-	</div>
+</div>
+
+<div class="nav clearfix">
+	<ul>
+		<li class="active"><a href="index.php">View</a></li>
+		<li><a href="add.php">Add</a></li>
+		<li><a href="delete.php">Delete</a></li>
+	</ul>
 </div>
 
 <main class="default">
