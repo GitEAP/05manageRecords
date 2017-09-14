@@ -1,4 +1,6 @@
 <?php
+require_once('connectvars.php');
+
 $hotelName = $_POST['hotelName'];
 $location = $_POST['location'];
 $phone = $_POST['phone'];
@@ -7,8 +9,7 @@ $id = $_POST['id'];
 
 
 //Build db connection
-	$dbconnection = mysqli_connect('localhost', 'erickper_3760usr', 'OcaC)hJzA}Wd', 'erickper_3760') or die('Connection to the database failed');
-
+$dbconnection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die ('connection failed');
 	//Build query
 	$query = "UPDATE hotel_simple SET name='$hotelName', location='$location', phone='$phone', rating='$rating' WHERE id=$id";
 

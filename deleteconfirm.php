@@ -1,9 +1,10 @@
 <?php
+require_once('connectvars.php');
+
 $hotelId = $_GET['id'];
 
 //Build db connection
-$dbconnection = mysqli_connect('localhost', 'erickper_3760usr', 'OcaC)hJzA}Wd', 'erickper_3760') or die('Connection to the database failed');
-
+$dbconnection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die ('connection failed');
 //-------------------Delete selected------------------------
 if (isset($_POST['submit'])) {
 	//Build query

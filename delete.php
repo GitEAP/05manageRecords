@@ -1,7 +1,8 @@
 <?php
-//Build db connection
-$dbconnection = mysqli_connect('localhost', 'erickper_3760usr', 'OcaC)hJzA}Wd', 'erickper_3760') or die('Connection to the database failed');
+require_once('connectvars.php');
 
+//Build db connection
+$dbconnection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die ('connection failed');
 //Build query
 $query = "SELECT * FROM hotel_simple ORDER BY name";
 
